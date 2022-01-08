@@ -55,12 +55,13 @@ class ManifestBuilder:
         release_zip = zipfile.ZipFile(release_zip_data)
 
         # create directory and unzip artifact
-        os.makedirs(plugin.repo, exist_ok=True)
-        release_zip.extractall(plugin.repo)
+        os.rmdir("plugins")
+        os.makedirs(f"plugins/{plugin.repo}")
+        release_zip.extractall(f"plugins/{plugin.repo}")
 
         # grab the manifest from the json in the created directory
-        plugin_json = glob.glob(f"{plugin.repo}/*.json")[0]
-        plugin_zip = glob.glob(f"{plugin.repo}/*.zip")[0]
+        plugin_json = glob.glob(f"plugins/{plugin.repo}/*.json")[0]
+        plugin_zip = glob.glob(f"plugins/{plugin.repo}/*.zip")[0]
         print(f"JSON: {plugin_json}")
         print(f"Zip: {plugin_zip}")
 
