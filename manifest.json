@@ -1,0 +1,64 @@
+[
+  {
+    "Author": "zhudotexe",
+    "Name": "PaissaHouse",
+    "InternalName": "autoSweep",
+    "AssemblyVersion": "1.2.1.0",
+    "Description": "Looking for that perfect house? PaissaHouse lets you receive notifications when a new plot of land is up for sale on your home world.\n\nWant to contribute? Check out the repository (globe icon below) for instructions.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/zhudotexe/FFXIV_PaissaHouse",
+    "Tags": [
+      "housing"
+    ],
+    "DalamudApiLevel": 5,
+    "LoadPriority": 0,
+    "ImageUrls": [],
+    "Punchline": "Chat alerts for player housing.",
+    "Changelog": "Updated for Endwalker.",
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "LastUpdated": 1641622870,
+    "DownloadLinkInstall": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_PaissaHouse/autoSweep.zip",
+    "DownloadLinkTesting": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_PaissaHouse/autoSweep.zip",
+    "DownloadLinkUpdate": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_PaissaHouse/autoSweep.zip"
+  },
+  {
+    "Author": "zhudotexe",
+    "Name": "Countdown Messages for Xeyr",
+    "Description": "Generates a random Arc Sys countdown message on /rcd <time>. Time must be between 5 and 30 seconds.",
+    "InternalName": "CountdownMessages",
+    "RepoUrl": "https://github.com/zhudotexe/FFXIV_CountdownMessages",
+    "ApplicableVersion": "any",
+    "Tags": [
+      "meme"
+    ],
+    "DalamudApiLevel": 5,
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "LastUpdated": 1641622871,
+    "DownloadLinkInstall": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_CountdownMessages/CountdownMessages.zip",
+    "DownloadLinkTesting": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_CountdownMessages/CountdownMessages.zip",
+    "DownloadLinkUpdate": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_CountdownMessages/CountdownMessages.zip"
+  },
+  {
+    "Author": "zhudotexe",
+    "Name": "YEAAAAAAHT",
+    "InternalName": "VieraVoice4",
+    "AssemblyVersion": "1.0.0.0",
+    "Description": "YEAAAAAAAAHT",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/zhudotexe/FFXIV_VieraVoice4",
+    "Tags": [
+      "meme"
+    ],
+    "DalamudApiLevel": 5,
+    "LoadPriority": 0,
+    "IconUrl": "images/icon.png",
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "LastUpdated": 1641622871,
+    "DownloadLinkInstall": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_VieraVoice4/VieraVoice4.zip",
+    "DownloadLinkTesting": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_VieraVoice4/VieraVoice4.zip",
+    "DownloadLinkUpdate": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_VieraVoice4/VieraVoice4.zip"
+  }
+]
