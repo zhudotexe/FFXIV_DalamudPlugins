@@ -11,5 +11,5 @@
   ],
   "DalamudApiLevel": 5,
   "LoadPriority": 0,
-  "IconUrl": "images/icon.png"
+  "IconUrl": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_VieraVoice4/images/icon.png"
 }

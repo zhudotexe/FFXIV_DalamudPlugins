@@ -17,7 +17,7 @@
     "Changelog": "Updated for Endwalker.",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "LastUpdated": 1641622870,
+    "LastUpdated": 1640815399,
     "DownloadLinkInstall": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_PaissaHouse/autoSweep.zip",
     "DownloadLinkTesting": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_PaissaHouse/autoSweep.zip",
     "DownloadLinkUpdate": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_PaissaHouse/autoSweep.zip"
@@ -35,7 +35,7 @@
     "DalamudApiLevel": 5,
     "IsHide": false,
     "IsTestingExclusive": false,
-    "LastUpdated": 1641622871,
+    "LastUpdated": 1640813618,
     "DownloadLinkInstall": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_CountdownMessages/CountdownMessages.zip",
     "DownloadLinkTesting": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_CountdownMessages/CountdownMessages.zip",
     "DownloadLinkUpdate": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_CountdownMessages/CountdownMessages.zip"
@@ -53,10 +53,10 @@
     ],
     "DalamudApiLevel": 5,
     "LoadPriority": 0,
-    "IconUrl": "images/icon.png",
+    "IconUrl": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_VieraVoice4/images/icon.png",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "LastUpdated": 1641622871,
+    "LastUpdated": 1641623638,
     "DownloadLinkInstall": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_VieraVoice4/VieraVoice4.zip",
     "DownloadLinkTesting": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_VieraVoice4/VieraVoice4.zip",
     "DownloadLinkUpdate": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_VieraVoice4/VieraVoice4.zip"
