@@ -25,10 +25,17 @@ class ManifestBuilder:
 
     def run(self):
         plugins = pydantic.parse_file_as(List[PluginDef], "plugins.json")
-        os.rmdir("plugins")
+        self.delete_old_plugin_folder()
         for plugin in plugins:
             self.process_plugin(plugin)
         self.write_manifest()
+
+    @staticmethod
+    def delete_old_plugin_folder():
+        try:
+            os.rmdir("plugins")
+        except FileNotFoundError:
+            pass
 
     def process_plugin(self, plugin: PluginDef):
         print(f" ==== {plugin.user}/{plugin.repo} ==== ")
