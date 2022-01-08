@@ -27,6 +27,7 @@ class ManifestBuilder:
         plugins = pydantic.parse_file_as(List[PluginDef], "plugins.json")
         for plugin in plugins:
             self.process_plugin(plugin)
+        self.write_manifest()
 
     def process_plugin(self, plugin: PluginDef):
         print(f" ==== {plugin.user}/{plugin.repo} ==== ")
