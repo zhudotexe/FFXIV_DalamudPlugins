@@ -29,6 +29,7 @@ class ManifestBuilder:
             self.process_plugin(plugin)
 
     def process_plugin(self, plugin: PluginDef):
+        print(f" ==== {plugin.user}/{plugin.repo} ==== ")
         # get latest release artifact
         repo_artifacts = requests.get(
             f"https://api.github.com/repos/{plugin.user}/{plugin.repo}/actions/artifacts",
@@ -36,10 +37,11 @@ class ManifestBuilder:
         )
         repo_artifacts.raise_for_status()
         release_artifact = next(sorted(
-            (artifact for artifact in repo_artifacts.json() if artifact['name'] == 'ReleaseArtifact'),
+            (artifact for artifact in repo_artifacts.json()['artifacts'] if artifact['name'] == 'ReleaseArtifact'),
             key=lambda artifact: artifact['updated_at'],
             reverse=True
         ))
+        print(f"Found artifact: {release_artifact['name']} (ID {release_artifact['id']}, {release_artifact['size_in_bytes']}B)")
         artifact_download_url = release_artifact['archive_download_url']
 
         # download artifact
@@ -55,6 +57,8 @@ class ManifestBuilder:
         # grab the manifest from the json in the created directory
         plugin_json = glob.glob(f"{plugin.repo}/*.json")[0]
         plugin_zip = glob.glob(f"{plugin.repo}/*.zip")[0]
+        print(f"JSON: {plugin_json}")
+        print(f"Zip: {plugin_zip}")
 
         # grab plugin manifest and update
         with open(plugin_json) as f:
@@ -69,6 +73,7 @@ class ManifestBuilder:
             "DownloadLinkUpdate": f"https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/{plugin_zip}"
         })
         self.manifests.append(manifest)
+        print()
 
     def write_manifest(self):
         with open("manifest.json", "w") as f:
