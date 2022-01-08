@@ -36,11 +36,11 @@ class ManifestBuilder:
             auth=(plugin.user, GITHUB_TOKEN)
         )
         repo_artifacts.raise_for_status()
-        release_artifact = next(sorted(
+        release_artifact = sorted(
             (artifact for artifact in repo_artifacts.json()['artifacts'] if artifact['name'] == 'ReleaseArtifact'),
             key=lambda artifact: artifact['updated_at'],
             reverse=True
-        ))
+        )[0]
         print(f"Found artifact: {release_artifact['name']} (ID {release_artifact['id']}, {release_artifact['size_in_bytes']}B)")
         artifact_download_url = release_artifact['archive_download_url']
 
