@@ -2,12 +2,12 @@ import glob
 import io
 import json
 import os
-import time
 import zipfile
 from typing import List
 
 import pydantic
 import requests
+from dateutil import parser
 from pydantic import BaseModel
 
 GITHUB_TOKEN = os.getenv("REPO_ACCESS_TOKEN")
@@ -79,7 +79,7 @@ class ManifestBuilder:
         manifest.update({
             "IsHide": False,
             "IsTestingExclusive": False,
-            "LastUpdated": int(time.time()),
+            "LastUpdated": int(parser.parse(release_artifact['updated_at']).timestamp()),
             "DownloadLinkInstall": f"https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/{plugin_zip}",
             "DownloadLinkTesting": f"https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/{plugin_zip}",
             "DownloadLinkUpdate": f"https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/{plugin_zip}"
