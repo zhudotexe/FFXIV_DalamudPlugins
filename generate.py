@@ -25,6 +25,7 @@ class ManifestBuilder:
 
     def run(self):
         plugins = pydantic.parse_file_as(List[PluginDef], "plugins.json")
+        os.rmdir("plugins")
         for plugin in plugins:
             self.process_plugin(plugin)
         self.write_manifest()
@@ -55,8 +56,7 @@ class ManifestBuilder:
         release_zip = zipfile.ZipFile(release_zip_data)
 
         # create directory and unzip artifact
-        os.rmdir("plugins")
-        os.makedirs(f"plugins/{plugin.repo}")
+        os.makedirs(f"plugins/{plugin.repo}", exist_ok=True)
         release_zip.extractall(f"plugins/{plugin.repo}")
 
         # grab the manifest from the json in the created directory
