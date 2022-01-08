@@ -2,6 +2,7 @@ import glob
 import io
 import json
 import os
+import shutil
 import zipfile
 from typing import List
 
@@ -33,7 +34,7 @@ class ManifestBuilder:
     @staticmethod
     def delete_old_plugin_folder():
         try:
-            os.rmdir("plugins")
+            shutil.rmtree("plugins")
         except FileNotFoundError:
             pass
 
