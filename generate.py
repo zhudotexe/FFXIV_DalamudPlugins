@@ -51,7 +51,7 @@ class ManifestBuilder:
             key=lambda artifact: artifact['updated_at'],
             reverse=True
         )[0]
-        print(f"Found artifact: {release_artifact['name']})")
+        print(f"Found artifact: {release_artifact['name']}")
         print(f"ID: {release_artifact['id']}")
         print(f"Size: {release_artifact['size_in_bytes']}B")
         print(f"Updated at: {release_artifact['updated_at']}")
