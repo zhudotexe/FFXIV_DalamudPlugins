@@ -1,10 +1,14 @@
 {
   "Author": "zhudotexe",
   "Name": "Countdown Messages for Xeyr",
-  "Description": "Generates a random Arc Sys countdown message on /rcd <time>. Time must be between 5 and 30 seconds.",
   "InternalName": "CountdownMessages",
-  "RepoUrl": "https://github.com/zhudotexe/FFXIV_CountdownMessages",
+  "AssemblyVersion": "1.0.3.0",
+  "Description": "Generates a random Arc Sys countdown message on /rcd <time>. Time must be between 5 and 30 seconds.",
   "ApplicableVersion": "any",
-  "Tags": ["meme"],
-  "DalamudApiLevel": 5
+  "RepoUrl": "https://github.com/zhudotexe/FFXIV_CountdownMessages",
+  "Tags": [
+    "meme"
+  ],
+  "DalamudApiLevel": 5,
+  "LoadPriority": 0
 }
