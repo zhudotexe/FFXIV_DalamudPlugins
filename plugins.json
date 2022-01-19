@@ -13,5 +13,10 @@
     "user": "zhudotexe",
     "repo": "FFXIV_VieraVoice4",
     "branch": "main"
+  },
+  {
+    "user": "zhudotexe",
+    "repo": "FFXIV_ReadyCheck",
+    "branch": "main"
   }
 ]
