@@ -1,14 +1,15 @@
 {
   "Author": "zhudotexe",
-  "Name": "Countdown Messages for Xeyr",
+  "Name": "Arc Sys Countdown Messages",
   "InternalName": "CountdownMessages",
-  "AssemblyVersion": "1.0.4.1",
+  "AssemblyVersion": "1.0.4.2",
   "Description": "Generates a random Arc Sys countdown message on /rcd <time>. Time must be between 5 and 30 seconds.",
   "ApplicableVersion": "any",
   "RepoUrl": "https://github.com/zhudotexe/FFXIV_CountdownMessages",
   "Tags": [
     "meme"
   ],
-  "DalamudApiLevel": 6,
-  "LoadPriority": 0
+  "DalamudApiLevel": 7,
+  "LoadPriority": 0,
+  "Punchline": "Can't escape from crossing Michigan! The lazy Susan of fate is turning! Third fish! Eviscerate!"
 }
