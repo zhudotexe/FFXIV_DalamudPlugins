@@ -59,6 +59,9 @@ class ManifestBuilder:
 
         # download artifact
         release_zip_req = requests.get(artifact_download_url, auth=(plugin.user, GITHUB_TOKEN))
+        if release_zip_req.status == 410:
+            print("Latest artifact is expired, skipping")
+            return
         release_zip_req.raise_for_status()
         release_zip_data = io.BytesIO(release_zip_req.content)
         release_zip = zipfile.ZipFile(release_zip_data)
