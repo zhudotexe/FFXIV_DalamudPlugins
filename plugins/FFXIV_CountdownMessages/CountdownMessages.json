@@ -2,14 +2,14 @@
   "Author": "zhudotexe",
   "Name": "Arc Sys Countdown Messages",
   "InternalName": "CountdownMessages",
-  "AssemblyVersion": "1.0.6.0",
+  "AssemblyVersion": "1.0.7.0",
   "Description": "Generates a random Arc Sys countdown message on /rcd <time>. Time must be between 5 and 30 seconds.",
   "ApplicableVersion": "any",
   "RepoUrl": "https://github.com/zhudotexe/FFXIV_CountdownMessages",
   "Tags": [
     "meme"
   ],
-  "DalamudApiLevel": 9,
+  "DalamudApiLevel": 10,
   "LoadRequiredState": 0,
   "LoadSync": false,
   "CanUnloadAsync": false,
