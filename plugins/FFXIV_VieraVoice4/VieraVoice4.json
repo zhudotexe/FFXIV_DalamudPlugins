@@ -1,0 +1,20 @@
+{
+  "Author": "zhudotexe",
+  "Name": "YEAAAAAAHT",
+  "InternalName": "VieraVoice4",
+  "AssemblyVersion": "1.0.0.0",
+  "Description": "YEAAAAAAAAHT",
+  "ApplicableVersion": "any",
+  "RepoUrl": "https://github.com/zhudotexe/FFXIV_VieraVoice4",
+  "Tags": [
+    "meme"
+  ],
+  "DalamudApiLevel": 10,
+  "LoadRequiredState": 0,
+  "LoadSync": false,
+  "CanUnloadAsync": false,
+  "LoadPriority": 0,
+  "IconUrl": "https://raw.githubusercontent.com/zhudotexe/FFXIV_DalamudPlugins/main/plugins/FFXIV_VieraVoice4/images/icon.png",
+  "Punchline": "YEAAAAAAAAHT",
+  "AcceptsFeedback": true
+}
